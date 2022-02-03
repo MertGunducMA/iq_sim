@@ -77,7 +77,7 @@
     <include>
       <uri>model://sun</uri>
     </include>
-    <model name="drone_with_radar">
+    <model name="drone_with_sonar">
       <pose> 0 0 0 0 0 0</pose>
       <include>
         <uri>model://drone_with_radar</uri>
