@@ -5,7 +5,7 @@
       <uri>model://iris_base</uri>
     </include>
 
-      <!-- Sonar Sensor -->
+      <!-- Radar Sensor -->
       <link name="base_radar_front">
         <pose>0.18 0 .2 0 0 0</pose>
         <collision name="radar_collision">
@@ -41,21 +41,21 @@
           <ray>
              <scan>
                 <horizontal>
-                   <samples>60</samples>
+                   <samples>30</samples>
                    <resolution>1</resolution> 
-                   <min_angle>-0.60</min_angle>
-                   <max_angle>0.60</max_angle>
+                   <min_angle>-0.15</min_angle>
+                   <max_angle>0.15</max_angle>
                 </horizontal>
                 <vertical>
-                   <samples>120</samples>
-                   <resolution>1</resolution> 
-                   <min_angle>-0.120</min_angle>
-                   <max_angle>0.120</max_angle> 
+                   <samples>1</samples>
+                   <resolution>30</resolution> 
+                   <min_angle>0.15</min_angle>
+                   <max_angle>-0.15</max_angle> 
                 </vertical>
              </scan>
              <range>
                 <min>0.06</min>
-                <max>100</max>
+                <max>150</max>
                 <resolution>0.02</resolution>
              </range>
           </ray>
